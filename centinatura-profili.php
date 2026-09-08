@@ -86,7 +86,7 @@ include 'partials/header.php'; ?>
     <!-- GALLERIA -->
     <section class="py-5">
         <div class="container">
-            <h2 class="mb-4">Lavorazioni realizzate</h2>
+            <h2 class="mb-4">Le nostre competenze</h2>
                 <p class="lead mb-4">Tecnologia, esperienza e attenzione ai dettagli per trasformare ogni progetto in una struttura solida e precisa.</p>
 
             <div class="row g-4">
