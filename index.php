@@ -8,7 +8,7 @@ include 'partials/header.php'; ?>
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
-                    <img src="img/lavoro1.webp" class="d-block w-100"
+                    <img src="img/job1.webp" class="d-block w-100"
                         alt="Infisso in acciaio satinato">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Infisso in acciaio satinato</h5>
@@ -17,7 +17,7 @@ include 'partials/header.php'; ?>
                 </div>
 
                 <div class="carousel-item">
-                    <img src="img/lavoro2.webp" class="d-block w-100"
+                    <img src="img/job2.webp" class="d-block w-100"
                         alt="Pergolato corten">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Pergolato in corten</h5>
@@ -27,7 +27,7 @@ include 'partials/header.php'; ?>
                 </div>
 
                 <div class="carousel-item">
-                    <img src="img/lavoro3.webp" class="d-block w-100"
+                    <img src="img/job3.webp" class="d-block w-100"
                         alt="Scala inox su misura">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Scala inox su misura</h5>
@@ -90,8 +90,8 @@ include 'partials/header.php'; ?>
                 <div class="row g-4">
                     <div class="col-md-4">
                         <div class="portfolio-item shadow-sm">
-                            <img src="img/lavoro1.webp" class="img-fluid"
-                                alt="Lavoro 1">
+                            <img src="img/job1.webp" class="img-fluid"
+                                alt="Serramenti in alluminio e facciata continua a vetrata realizzati da carpenteria metallica">
                             <div class="p-3">
                                 <h5 class="text-uppercase">Infisso in
                                     acciaio</h5>
@@ -102,8 +102,8 @@ include 'partials/header.php'; ?>
 
                     <div class="col-md-4">
                         <div class="portfolio-item shadow-sm">
-                            <img src="img/lavoro2.webp" class="img-fluid"
-                                alt="Lavoro 2">
+                            <img src="img/job2.webp" class="img-fluid"
+                                alt="Pergolato in corten realizzato da carpenteria metallica">
                             <div class="p-3">
                                 <h5 class="text-uppercase">Pergolato in
                                     corten</h5>
@@ -115,8 +115,8 @@ include 'partials/header.php'; ?>
 
                     <div class="col-md-4">
                         <div class="portfolio-item shadow-sm">
-                            <img src="img/lavoro3.webp" class="img-fluid"
-                                alt="Lavoro 3">
+                            <img src="img/job3.webp" class="img-fluid"
+                                alt="Scala elicoidale in acciaio inox e vetro realizzata su misura da carpenteria metallica">    
                             <div class="p-3">
                                 <h5 class="text-uppercase">Struttura inox</h5>
                                 <p>Finitura satinata e saldature a vista.</p>

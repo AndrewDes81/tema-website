@@ -586,7 +586,7 @@ h1, h2, h3, h4, h5 {
    CONTATTI PREMIUM – ICONCINE + TESTO ACCAPO
    =========================== */
 
-/* Box contatti */
+/* Box contatti chiaro (form a destra) */
 .contact-box {
     background: var(--bianco);
     border: 1px solid rgba(0,0,0,0.08);
@@ -600,7 +600,33 @@ h1, h2, h3, h4, h5 {
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-/* Icona grande premium */
+/* ===========================
+   BOX CONTATTI SCURO PREMIUM (colonna sinistra)
+   =========================== */
+
+.contact-box-thin {
+    background: #222;
+    border: 1px solid var(--corten);
+    border-radius: 12px;
+    padding: 30px;
+    color: #F2F2F2;
+}
+
+.contact-box-thin h2,
+.contact-box-thin h5 {
+    color: #FFFFFF;
+}
+
+.contact-box-thin p {
+    color: #D0D0D0 !important;
+}
+
+.contact-icon-thin {
+    color: var(--grigio-acciaio);
+    font-size: 1.3rem;
+}
+
+/* Icona grande premium (per altre sezioni) */
 .contact-icon {
     font-size: 2.4rem;
     color: var(--corten);
@@ -688,6 +714,18 @@ h1, h2, h3, h4, h5 {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ===========================
+   MAPPA PREMIUM
+   =========================== */
+
+.map-box {
+    border: 1px solid #CFCFCF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
 
 /* ===========================
    HERO PAGINE INTERNE – TEMA
