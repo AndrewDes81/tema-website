@@ -103,7 +103,7 @@ include 'partials/header.php';?>
 
                     <div class="col-md-4">
                         <div class="p-4 border rounded shadow-sm h-100">
-                            <h5 class="text-uppercase">Infissi e Serramenti</h5>
+                            <h5 class="text-uppercase">Infissi</h5>
                             <p>Disegni precisi per infissi su misura, con
                                 dettagli tecnici e sezioni.</p>
                         </div>

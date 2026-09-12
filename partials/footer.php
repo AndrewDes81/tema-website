@@ -16,7 +16,7 @@
                     <h5 class="fw-bold mb-3">Contatti</h5>
                     <p class="mb-1">Tel: +39 339 3904686</p>
                     <p class="mb-1">Email: infotema.ap@gmail.com</p>
-                    <p class="mb-1">P.IVA: 01234567890</p>
+                    <p class="mb-1">P.IVA: 03456540735</p>
                 </div>
 
                 <!-- COLONNA 3: LINK -->
@@ -32,7 +32,7 @@
             <hr class="footer-divider">
             <!-- RIGA FINALE -->
             <div class="text-center mt-3">
-                <p class="mb-0">©2026 TEMA – P.I. 01234567890</p>
+                <p class="mb-0">©2026 TEMA – P.I. 03456540735</p>
             </div>
         </div>
     </footer>

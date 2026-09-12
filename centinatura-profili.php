@@ -56,7 +56,7 @@ include 'partials/header.php'; ?>
                 curvare profili metallici mantenendo resistenza,
                 continuità e pulizia estetica. TEMA realizza centinature su
                 acciaio, inox e corten con macchinari professionali,
-                garantendo risultati perfetti anche su grandi raggi e su
+                garantendo risultati perfetti anche su piccoli raggi e su
                 profili tubolari, piatti e strutturali.
             </p>
         </div>
@@ -86,7 +86,7 @@ include 'partials/header.php'; ?>
     <!-- GALLERIA -->
     <section class="py-5">
         <div class="container">
-            <h2 class="mb-4">Lavorazioni realizzate</h2>
+            <h2 class="mb-4">Tecnologia e competenze</h2>
                 <p class="lead mb-4">Tecnologia, esperienza e attenzione ai dettagli per trasformare ogni progetto in una struttura solida e precisa.</p>
 
             <div class="row g-4">
