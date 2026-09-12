@@ -605,7 +605,7 @@ h1, h2, h3, h4, h5 {
    =========================== */
 
 .contact-box-thin {
-    background: #222;
+    background: #212529;
     border: 1px solid var(--corten);
     border-radius: 12px;
     padding: 30px;
@@ -761,3 +761,13 @@ h1, h2, h3, h4, h5 {
     text-decoration: none;
 }
 
+/* ICONE SOCIAL BIANCHE */
+.social-icon-thin i {
+    color: #fff !important;
+    transition: 0.25s ease;
+}
+
+/* EFFETTO OMBRA IN HOVER */
+.social-icon-thin:hover i {
+    text-shadow: 0 0 6px rgba(255,255,255,0.7);
+}
