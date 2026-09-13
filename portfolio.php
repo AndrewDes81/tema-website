@@ -64,7 +64,13 @@ $categories = [
                         echo '
                         <div class="col-md-4 portfolio-col all '.$key.'">
                             <div class="portfolio-item">
-                                <img src="'.$folder.$file.'" class="img-fluid rounded shadow-sm" alt="'.$label.'">
+                                <img src="'.$folder.$file.'" 
+                                class="img-fluid rounded shadow-sm portfolio-img '.$key.'" 
+                                alt="'.$label.'" 
+                                data-img="'.$folder.$file.'"
+                                data-cat="'.$key.'">
+
+
                             </div>
                         </div>';
                     }
@@ -84,6 +90,40 @@ $categories = [
         <a href="contatti.php" class="btn btn-light btn-lg">Contattaci</a>
     </div>
 </section>
+<!-- MODAL PER INGRANDIMENTO IMMAGINI -->
+<div class="modal fade" id="imgModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-dark border-0 position-relative">
+
+      <!-- Freccia sinistra -->
+      <button id="prevBtn" 
+              class="btn btn-light position-absolute top-50 start-0 translate-middle-y ms-2"
+              style="z-index: 9999;">
+        ‹
+      </button>
+
+      <!-- CONTENITORE FISSO -->
+      <div class="modal-body p-0 d-flex justify-content-center align-items-center" 
+           style="height: 80vh; overflow: hidden;">
+
+        <img id="modalImage" src="" 
+             class="img-fluid rounded" 
+             style="max-height: 100%; max-width: 100%; object-fit: contain; pointer-events: none;">
+      </div>
+
+      <!-- Freccia destra -->
+      <button id="nextBtn" 
+              class="btn btn-light position-absolute top-50 end-0 translate-middle-y me-2"
+              style="z-index: 9999;">
+        ›
+      </button>
+
+    </div>
+  </div>
+</div>
+
+
+
 <script src="js/portfolio.js"></script>
 
 <?php include 'partials/footer.php'; ?>
