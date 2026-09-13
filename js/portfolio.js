@@ -35,24 +35,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let imagesFiltered = [];
 let currentIndex = 0;
+let currentCategory = "";
 
 // Quando clicchi un'immagine
 document.querySelectorAll('.portfolio-img').forEach((img) => {
 
     img.addEventListener('click', () => {
 
-        const clickedCat = img.getAttribute('data-cat');
+        currentCategory = img.getAttribute('data-cat');
 
         // Filtra solo le immagini della categoria cliccata
         imagesFiltered = Array.from(document.querySelectorAll('.portfolio-img'))
-            .filter(i => i.getAttribute('data-cat') === clickedCat)
+            .filter(i => i.getAttribute('data-cat') === currentCategory)
             .map(i => i.getAttribute('data-img'));
 
         // Trova l'indice dell'immagine cliccata dentro il gruppo filtrato
         currentIndex = imagesFiltered.indexOf(img.getAttribute('data-img'));
 
         // Mostra l'immagine nel modal
-        document.getElementById('modalImage').src = imagesFiltered[currentIndex];
+        updateModal();
 
         const modal = new bootstrap.Modal(document.getElementById('imgModal'));
         modal.show();
@@ -60,14 +61,47 @@ document.querySelectorAll('.portfolio-img').forEach((img) => {
 });
 
 
+// ⭐ Funzione che aggiorna immagine + info
+function updateModal() {
+    document.getElementById('modalImage').src = imagesFiltered[currentIndex];
+
+    const modalInfo = document.getElementById('modalInfo');
+    modalInfo.textContent = `${currentCategory.toUpperCase()} — ${currentIndex + 1} / ${imagesFiltered.length}`;
+}
+
+
 // ⭐ Freccia destra
 document.getElementById('nextBtn').addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % imagesFiltered.length;
-    document.getElementById('modalImage').src = imagesFiltered[currentIndex];
+    updateModal();
 });
 
 // ⭐ Freccia sinistra
 document.getElementById('prevBtn').addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + imagesFiltered.length) % imagesFiltered.length;
-    document.getElementById('modalImage').src = imagesFiltered[currentIndex];
+    updateModal();
 });
+
+
+// ⭐ Scorrimento con tastiera
+document.addEventListener('keydown', (e) => {
+
+    const modalVisible = document.querySelector('#imgModal.show');
+    if (!modalVisible) return;
+
+    if (e.key === "ArrowRight") {
+        currentIndex = (currentIndex + 1) % imagesFiltered.length;
+        updateModal();
+    }
+
+    if (e.key === "ArrowLeft") {
+        currentIndex = (currentIndex - 1 + imagesFiltered.length) % imagesFiltered.length;
+        updateModal();
+    }
+
+    if (e.key === "Escape") {
+        const modal = bootstrap.Modal.getInstance(document.getElementById('imgModal'));
+        modal.hide();
+    }
+});
+

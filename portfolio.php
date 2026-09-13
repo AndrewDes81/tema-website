@@ -90,10 +90,18 @@ $categories = [
         <a href="contatti.php" class="btn btn-light btn-lg">Contattaci</a>
     </div>
 </section>
+
 <!-- MODAL PER INGRANDIMENTO IMMAGINI -->
 <div class="modal fade" id="imgModal" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered modal-xl">
     <div class="modal-content bg-dark border-0 position-relative">
+
+      <!-- INFO (categoria + counter) -->
+      <div id="modalInfo"
+           class="position-absolute top-0 start-50 translate-middle-x text-white py-2 px-3 rounded"
+           style="z-index: 9999; background: rgba(0,0,0,0.5); font-size: 1rem;">
+        <!-- Testo inserito via JS -->
+      </div>
 
       <!-- Freccia sinistra -->
       <button id="prevBtn" 
@@ -121,6 +129,7 @@ $categories = [
     </div>
   </div>
 </div>
+
 
 
 
